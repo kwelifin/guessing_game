@@ -1,9 +1,16 @@
+extern crate rand;
+
 use std::io;
+use rand::Rng;
 
 fn main() {
     println!("Угадайте число!");
 
-    println!("Пожалуйств, введите предположение");
+    let secred_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("Загаданное число: {}", secred_number);
+
+    println!("Пожалуйста, введите предположение");
 
     let mut guess = String::new();
 
