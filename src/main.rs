@@ -9,7 +9,6 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
-    println!("Загаданное число: {}", secret_number);
     loop {
         println!("Пожалуйста, введите предположение");
 
